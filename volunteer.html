@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer | Thriving Friends International</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <h1 class="logo"><a href="index.html">Thriving Friends International</a></h1>
+            <button class="menu-toggle" id="menuToggle">&#9776;</button>
+            <nav id="mainNav">
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="blog.html">Stories</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li class="dropdown">
+                        <a href="#">Support ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="volunteer-section">
+            <div class="container">
+                <h2>Become a Volunteer</h2>
+                <p>Join our mission to support and empower disabled adults around the world. Fill out the form below and we’ll be in touch!</p>
+
+                <form onsubmit="event.preventDefault(); alert('This form is for presentation only.')">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="availability">Availability:</label>
+                    <select id="availability" name="availability" required>
+                        <option value="">--Please choose--</option>
+                        <option value="weekdays">Weekdays</option>
+                        <option value="weekends">Weekends</option>
+                        <option value="both">Both</option>
+                    </select>
+
+                    <label for="message">Tell us why you’d like to volunteer:</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Thriving Friends International. All rights reserved.</p>
+            <p><a href="contact.html">Contact</a> | <a href="faq.html">FAQ</a> | <a href="donate.html">Donate</a></p>
+        </div>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById('menuToggle');
+        const nav = document.getElementById('mainNav');
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stories | Thriving Friends International</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <h1 class="logo"><a href="index.html">Thriving Friends International</a></h1>
+            <button class="menu-toggle" id="menuToggle">&#9776;</button>
+            <nav id="mainNav">
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="blog.html">Stories</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li class="dropdown">
+                        <a href="#">Support ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="blog-section">
+            <div class="container">
+                <h2>Community Stories</h2>
+
+                <article class="story-card">
+                    <h3>James Finds His Voice</h3>
+                    <p class="date"><strong>Posted:</strong> April 2025</p>
+                    <p>James, a 28-year-old with autism, used our online learning tools to build communication skills. After just three months, he was able to give a public speech for the first time. His mother says, “This program has changed our lives.”</p>
+                </article>
+
+                <article class="story-card">
+                    <h3>Maria’s Digital Journey</h3>
+                    <p class="date"><strong>Posted:</strong> March 2025</p>
+                    <p>Maria, a visually impaired adult learner, learned to use a screen reader and now runs a small online business with our mentorship program’s help. “I feel unstoppable now,” she says.</p>
+                </article>
+
+                <article class="story-card">
+                    <h3>Spotlight: Volunteer of the Month</h3>
+                    <p class="date"><strong>Posted:</strong> March 2025</p>
+                    <p>This month, we feature Alicia — who has translated over 20 learning resources into Spanish for our global audience.</p>
+                </article>
+            </div>
+        </section>
+        
+        <section class="submit-story">
+            <div class="container">
+                <h3>Share Your Story</h3>
+                <p>Have you or someone you know been impacted by Thriving Friends International? We’d love to hear about it.</p>
+        
+                <form action="https://formspree.io/f/YOUR-FORM-ID" method="POST" class="story-form">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" required>
+        
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+        
+                    <label for="story">Your Story:</label>
+                    <textarea name="story" id="story" rows="6" required></textarea>
+        
+                    <button type="submit" class="btn">Submit Story</button>
+                </form>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Thriving Friends International. All rights reserved.</p>
+            <p><a href="contact.html">Contact</a> | <a href="faq.html">FAQ</a> | <a href="donate.html">Donate</a></p>
+        </div>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById('menuToggle');
+        const nav = document.getElementById('mainNav');
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Thriving Friends International</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <h1 class="logo"><a href="index.html">Thriving Friends International</a></h1>
+
+            <button class="menu-toggle" id="menuToggle">&#9776;</button>
+            <nav id="mainNav">
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="blog.html">Stories</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li class="dropdown">
+                        <a href="#">Support ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-hero two-column">
+            <div class="container">
+                <div class="about-text">
+                    <h2>About Us</h2>
+                    <p>
+                        Thriving Friends International is a nonprofit dedicated to uplifting, empowering, and educating adults with disabilities through inclusive technology, global advocacy, and lifelong learning opportunities.
+                    </p>
+                </div>
+                <div class="about-photo">
+                    <img src="images/pexels-shvets-production-8415919.jpg" alt="Smiling group of volunteers outdoors">
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="values">
+            <div class="container">
+                <h1>Our Core Values</h1>
+                <div class="value-grid">
+                    <div class="value-card">
+                        <h4>Accessibility</h4>
+                        <p>We design with empathy and inclusivity at every level.</p>
+                    </div>
+                    <div class="value-card">
+                        <h4>Community</h4>
+                        <p>We build relationships through shared stories and service.</p>
+                    </div>
+                    <div class="value-card">
+                        <h4>Empowerment</h4>
+                        <p>We believe in the strength and potential of every person.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="accessibility-note">
+            <div class="container">
+                <p>This website was built with accessibility best practices, including semantic<br>
+                HTML, descriptive alt text, and keyboard-friendly navigation to ensure everyone<br>
+                can participate fully.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Thriving Friends International. All rights reserved.</p>
+            <p><a href="contact.html">Contact</a> | <a href="faq.html">FAQ</a> | <a href="donate.html">Donate</a></p>
+        </div>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById('menuToggle');
+        const nav = document.getElementById('mainNav');
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thriving Friends International</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <h1 class="logo"><a href="index.html">Thriving Friends International</a></h1>
+
+            <button class="menu-toggle" id="menuToggle">&#9776;</button>
+            <nav id="mainNav">
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="blog.html">Stories</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li class="dropdown">
+                        <a href="#">Support ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="hero-wrapper">
+            <section class="hero">
+                <div class="hero-content">
+                    <h2>Empowering disabled teens and adults through service and global connection</h2>
+                    <p>Building bridges through compassion, inclusion, and purpose-driven action.</p>
+                    <a href="volunteer.html" class="btn">Get Involved</a>
+                </div>
+            </section>
+        </div>
+               
+        <section class="mission">
+            <div class="container">
+                <h3>Our Mission</h3>
+                <p>
+                    At Thriving Friends International, we believe that everyone deserves the chance to give back. Our mission is to foster friendships, personal growth, and inclusion by connecting disabled individuals with purpose-driven volunteer projects and immersive travel experiences that serve underserved communities around the world.
+                </p>
+            </div>
+        </section>
+
+        <section class="why-we-serve">
+            <div class="container">
+                <h3>Why We Serve</h3>
+                <p>
+                    At Thriving Friends International, we believe that every person has the power to impact others. Our service projects are designed to uplift not only underserved communities around the world — but also the disabled individuals who lead them. Through friendship, purpose, and global outreach, we cultivate mutual growth and lasting joy.
+                </p>
+            </div>
+        </section>
+              
+        <section class="feature-grid">
+            <div class="grid-container">
+                <a href="donate.html" class="grid-item donate">
+                    <div class="grid-overlay">
+                        <h4>Donate</h4>
+                        <p>Support our mission and make a lasting difference.</p>
+                    </div>
+                </a>
+                <a href="volunteer.html" class="grid-item get-involved">
+                    <div class="grid-overlay">
+                        <h4>Get Involved</h4>
+                        <p>Join us on volunteer projects around the world.</p>
+                    </div>
+                </a>
+                <a href="about.html" class="grid-item about">
+                    <div class="grid-overlay">
+                        <h4>About Us</h4>
+                        <p>Learn more about our values, story, and team.</p>
+                    </div>
+                </a>
+                <a href="blog.html" class="grid-item stories">
+                    <div class="grid-overlay">
+                        <h4>Stories</h4>
+                        <p>See impact through real stories from our community.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="newsletter-cta">
+            <div class="container">
+                <h4>Stay Connected</h4>
+                <p>Join our email list to receive stories, updates, and ways to get involved.</p>
+                <a href="contact.html" class="btn">Sign Up</a>
+            </div>
+        </section>    
+    </main>
+   
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Thriving Friends International. All rights reserved.</p>
+            <p><a href="contact.html">Contact</a> | <a href="faq.html">FAQ</a> | <a href="donate.html">Donate</a></p>
+        </div>
+    </footer>
+     
+    <script>
+        const toggle = document.getElementById('menuToggle');
+        const nav = document.getElementById('mainNav');
+    
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+    
+</body>
+</html>

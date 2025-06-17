@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FAQ | Thriving Friends International</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <h1 class="logo"><a href="index.html">Thriving Friends International</a></h1>
+      <button class="menu-toggle" id="menuToggle">&#9776;</button>
+      <nav id="mainNav">
+        <ul class="main-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="blog.html">Stories</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li class="dropdown">
+            <a href="#">Support ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="faq-section">
+      <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+          <h4>What kind of volunteer work is available?</h4>
+          <p>We offer both local and international service opportunities focused on inclusive education, accessibility, and community development.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Do I need prior experience to join?</h4>
+          <p>No! We provide training and match you with projects that align with your interests and comfort level.</p>
+        </div>
+        <div class="faq-item">
+          <h4>How are donations used?</h4>
+          <p>Donations fund assistive tools, digital training programs, and community travel initiatives for people with disabilities.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Thriving Friends International. All rights reserved.</p>
+      <p><a href="contact.html">Contact</a> | <a href="faq.html">FAQ</a> | <a href="donate.html">Donate</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('mainNav');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
